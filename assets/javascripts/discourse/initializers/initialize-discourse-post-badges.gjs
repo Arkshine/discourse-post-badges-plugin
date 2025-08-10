@@ -77,7 +77,7 @@ export default {
         get badges() {
           const { user_badges: allBadges, username } = this.outletArgs.post;
           const linkDestination =
-            siteSettings.post_badges_badge_link_destination;
+            this.siteSettings.post_badges_badge_link_destination;
 
           return loadUserBadges({
             allBadges,
